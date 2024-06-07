@@ -478,7 +478,7 @@ async def roll(ctx, item_name: str, classes: str, time: int):
     if time > maxTime:
         await ctx.respond(f"The time limit is {maxTime // 60} minutes. Setting time to {maxTime} seconds.")
         time = maxTime
-    elif time < 1:
+    elif time < 20:
         await ctx.respond(f"The minimum time limit is 20 seconds. Setting time to 20 seconds.")
     time = 20
 
